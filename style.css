@@ -102,3 +102,6 @@ footer {
   bottom: 0;
   font-size: 0.8rem; /* Adjust font size for smaller screens */
 }
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {}
