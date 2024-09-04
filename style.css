@@ -1,150 +1,104 @@
+/* Import font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-body{
-    font-family: "Chakra Petch", sans-serif;
-    background-color:  #DDDDDD;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    height: 0%;
-    margin: 0;
-    padding: 0;
+/* Base styles */
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: #DDDDDD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Set minimum height for viewport */
+  margin: 0;
+  padding: 0;
 }
 
-.img1{
-    color: #45474B; 
-    margin: 0.5rem 0;
-    border-radius: 50%;
-    
+/* Responsive image styles */
+.img1 {
+  color: #45474B;
+  margin: 0.5rem 0;
+  border-radius: 50%;
+  max-width: 100%; /* Allow image to scale down on small screens */
+  height: auto; /* Maintain aspect ratio */
 }
 
-
-.h1 a{
-    padding: 0.8rem 1.2rem; 
-    border: none; 
-    border-radius: 1.5rem; 
-    color: #000000; 
-    font-size: 1.5rem; 
-    cursor: pointer; 
-    text-decoration: none;
-    
+/* Responsive link styles within h1 */
+.h1 a {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  color: #000000;
+  font-size: 1rem; /* Adjust font size for smaller screens */
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
-.item{
-    background: #FFFFFF; 
-    border-radius: 0.6rem; 
-    padding: 1rem;
-    margin-bottom: 1rem; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+/* Responsive item styles */
+.item {
+  background: #FFFFFF;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.sobre-apresentacao{
-    color: #45474B; 
-    margin: 0.5rem 0; 
-    font-size: 1rem;
+/* Responsive text styles */
+.sobre-apresentacao, .field {
+  color: #45474B;
+  margin: 0.5rem 0;
+  font-size: 0.8rem; /* Adjust font size for smaller screens */
 }
 
-.field{
-    border-radius: 1rem;
-    background-color:#F5F7F8;
-    display: flex;
-    align-items: center;
-
+/* Responsive field styles */
+.field {
+  border-radius: 1rem;
+  background-color: #F5F7F8;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Make field take full width on small screens */
 }
 
-.redes-sociais{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    padding: 0;
+/* Responsive social media styles */
+.redes-sociais {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  margin-bottom: 3rem;
+  padding: 0;
 }
 
-.redes{
-    border-radius: 2rem;
-    padding: 1rem;
-    margin: 1rem;
-    
-    
+.redes {
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.rede1 a{
-    padding: 0.8rem 1.2rem; 
-    border: none; 
-    border-radius: 1.5rem; 
-    color: #000000; 
-    font-size: 1.5rem; 
-    cursor: pointer; 
-    text-decoration: none;
-    
-}
-.rede1:hover{
-    background-color: #7e91a3; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    border-radius: 1rem;
+/* Responsive link styles within redes */
+.rede1 a {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  color: #000000;
+  font-size: 1rem; /* Adjust font size for smaller screens */
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
-footer{
-    background-color: #F5F7F8; 
-    color: #45474B; 
-    text-align: center; 
-    padding: 0; 
-    width: 100%; 
-    position: absolute; 
-    bottom: 0; 
-    font-size: 1rem; 
+/* Responsive hover effect for redes */
+.rede1:hover {
+  background-color: #7e91a3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Tamanho da fonte em telas menores */
-        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
-    }
-
-    section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
-        padding: 0.8rem; /* Espaçamento interno em telas menores */
-    }
-
-    .resultados-pesquisa {
-        width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
-    }
-}
-
-/* Responsividade para celulares */
-@media (max-width: 480px) {
-
-    h1 {
-        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
-    }
-
-    section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
-    }
-
-    section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
-    }
-
-    .resultados-pesquisa {
-        width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
-    }
+/* Responsive footer styles */
+footer {
+  background-color: #F5F7F8;
+  color: #45474B;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem; /* Adjust font size for smaller screens */
 }
