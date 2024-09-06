@@ -2,7 +2,7 @@
 /* Estilo base para responsividade */
 body {
   font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-  background-color: #DDDDDD; /* Cor de fundo da página */
+  background-color: #000000e5; /* Cor de fundo da página */
   display: flex; /* Usa Flexbox para layout */
   flex-direction: column; /* Alinha os itens na vertical */
   align-items: center; /* Centraliza os itens horizontalmente */
@@ -10,6 +10,7 @@ body {
   height: 100vh; /* Preenche a altura total da viewport */
   margin: 0; /* Remove a margem padrão */
   padding: 0; /* Remove o padding padrão */
+  color: #faf3f3;
 }
 
 /* Imagens responsivas */
@@ -21,19 +22,29 @@ img {
 /* Header responsivo */
 header {
   text-align: center;
+  
+}
+.img1 {
+image-rendering:pixelated;
+
 }
 
 h1 {
-  font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas menores */
+  font-size: 2rem; /* Ajusta o tamanho da fonte para telas menores */
+  text-decoration: none;
+  
 }
 
 /* Seção Sobre responsiva */
 .sobre {
   padding: 20px; /* Adiciona padding para melhor visualização */
+  
 }
 
 .sobre-apresentacao {
-  font-size: 1rem; /* Ajusta o tamanho do texto para telas menores */
+  font-size: 1.2rem; /* Ajusta o tamanho do texto para telas menores */
+  text-align: center;
+  text-shadow: #ccc;
 }
 
 /* Seção Redes Sociais responsiva */
@@ -45,12 +56,14 @@ h1 {
 }
 
 .field {
-  border: none; /* Remove a borda do fieldset */
+  border:none; /* Remove a borda do fieldset */
+  font-size: 1.2rem;
 }
 
 .rede1 {
   margin: 10px; /* Adiciona espaço entre os links */
   text-align: center;
+  border-style:solid;
 }
 
 .rede1 a {
@@ -62,7 +75,7 @@ h1 {
 }
 
 .rede1 a:hover {
-  background-color: #ccc; /* Cor de fundo ao passar o mouse */
+  background-color: #afafaf; /* Cor de fundo ao passar o mouse */
 }
 
 /* Footer responsivo */
