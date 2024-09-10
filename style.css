@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 /* Estilo base para responsividade */
 body {
   font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
@@ -15,7 +16,7 @@ body {
 
 /* Imagens responsivas */
 img {
-  max-width: 100%;
+  max-width: 480px;
   height: auto;
 }
 
@@ -85,12 +86,22 @@ footer {
 }
 
 /* Media queries para ajustes em telas bem pequenas */
-@media only screen and (max-width: 480px) {
+@media (max-width: 780px) {
+
   h1 {
     font-size: 1.2rem;
   }
 
   .sobre-apresentacao {
     font-size: 0.8rem;
+  }
+  
+  img{
+    height: auto;
+  
+  }
+
+  .img1{
+    height: auto;
   }
 }
