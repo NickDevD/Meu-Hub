@@ -11,7 +11,7 @@ body {
   height: 100vh; /* Preenche a altura total da viewport */
   margin: 0; /* Remove a margem padrão */
   padding: 0; /* Remove o padding padrão */
-  color: #faf3f3;
+  color: #f8f8f8;
 }
 
 /* Imagens responsivas */
@@ -31,14 +31,14 @@ image-rendering:pixelated;
 }
 
 h1 {
-  font-size: 2rem; /* Ajusta o tamanho da fonte para telas menores */
+  font-size: 3rem; /* Ajusta o tamanho da fonte para telas menores */
   text-decoration: none;
   
 }
 
 /* Seção Sobre responsiva */
 .sobre {
-  padding: 20px; /* Adiciona padding para melhor visualização */
+  padding: 0.5px; /* Adiciona padding para melhor visualização */
   
 }
 
@@ -70,19 +70,32 @@ h1 {
 .rede1 a {
   display: block; /* Permite que o link ocupe toda a largura */
   padding: 10px;
-  background-color: #ddd; /* Cor de fundo para os links */
+  background-color: #fcfcfc; /* Cor de fundo para os links */
   color: black; /* Cor do texto dos links */
   text-decoration: none; /* Remove o sublinhado dos links */
 }
 
 .rede1 a:hover {
-  background-color: #afafaf; /* Cor de fundo ao passar o mouse */
+  background-color: #5c52ee; /* Cor de fundo ao passar o mouse */
 }
 
 /* Footer responsivo */
 footer {
   text-align: center;
   padding: 10px;
+}
+
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 
 /* Media queries para ajustes em telas bem pequenas */
